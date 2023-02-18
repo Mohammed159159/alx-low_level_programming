@@ -31,7 +31,7 @@ int main(void)
 					putchar(' ');
 					putchar(k);
 					putchar(l);
-					if (i != 57 || j != i - 1 || k != i + 2 || l != k)
+					if (i != 57 || j != i - 1 || k != i || l != k)
 					{
 						putchar(',');
 						putchar(' ');
