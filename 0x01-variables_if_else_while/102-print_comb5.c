@@ -16,8 +16,15 @@ int main(void)
 		{
 			for (k = i; k <= 57; k++)
 			{
+				if (k > i)
+				{
+					l = 48;
+				} else
+				{
+					l = j + 1;
+				}
 
-				for (l = j + 1; l <= 57; l++)
+				for (; l <= 57; l++)
 				{
 					putchar(i);
 					putchar(j);
