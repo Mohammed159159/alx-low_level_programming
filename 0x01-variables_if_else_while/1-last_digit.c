@@ -26,5 +26,7 @@ int main(void)
 		printf("is less than 6 and not 0");
 	}
 
+	putchar('\n');
+
 	return (0);
 }
