@@ -12,7 +12,7 @@ int main(void)
 	for (i = 48; i <= 57; i++)
 	{
 
-		for (j = i + 1; j <= 57; j++)
+		for (j = 48; j <= 57; j++)
 		{
 			for (k = i; k <= 57; k++)
 			{
@@ -21,6 +21,7 @@ int main(void)
 				{
 					putchar(i);
 					putchar(j);
+					putchar(' ');
 					putchar(k);
 					putchar(l);
 					if (i != 57 || j != i - 1 || k != i + 2 || l != k)
