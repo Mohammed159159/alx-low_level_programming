@@ -7,6 +7,12 @@
  */
 int main(void)
 {
-    _putchar('a');
-    return (0);
+   char[] string = ['_', 'p', 'u', 'c', 'h', 'a', 'r', '\n'];
+   
+   int i;
+   for(i = 0; string[i] != '\n'; i++)
+   {
+	   _putchar(string[i]);
+   }
+   return (0);
 }
