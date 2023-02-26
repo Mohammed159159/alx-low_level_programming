@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code
  *
- * Return: 0
+ * Return: Always 0.
  */
-int main()
+int main(void)
 {
-	_putchar('a');
-
-	return (0);
+    _putchar('a');
+    return (0);
 }
