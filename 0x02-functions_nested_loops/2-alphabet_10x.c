@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * print_alphabet - check the code
+ *
+ * Return: void.
+ */
+
+void print_alphabet(void)
+{
+	char alph;
+	int i;
+	for (i = 0; i < 10; i++)
+	{
+
+
+		for (alph = 'a'; alph <= 'z'; alph++)
+		{
+			_putchar(alph);
+		}
+		_putchar('\n');
+	}	
+}
