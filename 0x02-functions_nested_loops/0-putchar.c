@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char string[] = {'_', 'p', 'u', 'c', 'h', 'a', 'r', '\n', '0'};
+	char string[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n', '0'};
 	int i;
 
 	for (i = 0; string[i] != '0'; i++)
