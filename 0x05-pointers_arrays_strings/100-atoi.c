@@ -23,7 +23,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 
-		else if (*ch >= '0' && *ch <= 9)
+		else if (*ch >= '0' && *ch <= '9')
 		{
 			n *= 10;
 			n += *ch - 48;
