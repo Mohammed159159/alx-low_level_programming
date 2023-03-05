@@ -10,6 +10,10 @@ int _atoi(char *s)
 	int i = 0, n = 0, sign = 1;
 	char *ch;
 
+	if (*(ch + 1) == '\0')
+		return (*ch - 48);
+	if (*ch == '\0')
+		return (0);
 	while (++i)
 	{
 		ch = s + i - 1;
