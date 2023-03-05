@@ -1,0 +1,35 @@
+/**
+ * _atoi - convert string into integer considering + and - and ignoring chars
+ *
+ * @s: String to be converted
+ *
+ * Return: Extracted number from string
+ */
+int _atoi(char *s)
+{
+	int i = 0, n = 0, sign = 1;
+	char *ch;
+
+	while (++i)
+	{
+		ch = s + i - 1;
+
+		//Handle sign
+		if (*ch = '-')
+		{
+			sign *= -1;
+		}
+
+		//Handle numbers
+		if (*ch >= '0'&& *ch <= 9)
+		{
+			n *= 10;
+			n += *ch - 48;
+
+			if (*(ch + 1) < '0' || *(ch + 1) > '9')
+				break;
+		}
+	}
+
+	return (n * sign);
+}
