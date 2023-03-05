@@ -14,9 +14,14 @@ void print_array(int *a, int n)
 
 	while (1)
 	{
+		if (n <= 0)
+		{
+			printf("\n");
+			break;
+		}
 		if (i + 1 < n)
 			printf("%d, ", *(a + i));
-		else if (n > 0)
+		else
 		{	printf("%d\n", *(a + i));
 			break;
 		}
