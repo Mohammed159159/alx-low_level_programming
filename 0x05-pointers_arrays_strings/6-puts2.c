@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * puts2 - print every other charachter in a string from 1st charachter
+ * puts2 - print every other charachter in a string from 1st charachter.
  *
- * @str: pointer to string
+ * @str: Pointer to string to be printed.
  *
- * Return: void
+ * Return: void.
  */
-
 void puts2(char *str)
 {
 	char *ch;
 
-	for (ch = str; *ch != '\0'; ch+=2)
+	for (ch = str; *ch != '\0'; ch += 2)
 	{
 		_putchar(*ch);
 	}
+
 	_putchar('\n');
 }
+
