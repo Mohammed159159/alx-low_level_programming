@@ -14,13 +14,11 @@ int _atoi(char *s)
 	{
 		ch = s + i - 1;
 
-		//Handle sign
-		if (*ch = '-')
+		if (*ch == '-')
 		{
 			sign *= -1;
 		}
 
-		//Handle numbers
 		if (*ch >= '0'&& *ch <= 9)
 		{
 			n *= 10;
