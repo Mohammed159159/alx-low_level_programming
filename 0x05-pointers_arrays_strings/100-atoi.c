@@ -11,7 +11,7 @@ int _atoi(char *s)
 	char *ch;
 
 	if (*(s + 1) == '\0')
-		return (*ch - 48);
+		return (*s - 48);
 	if (*s == '\0')
 		return (0);
 	while (++i)
