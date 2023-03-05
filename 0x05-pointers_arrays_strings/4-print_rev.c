@@ -1,5 +1,5 @@
 #include "main.h"
-
+int _strlen(char *s);
 /**
  * print_rev - print reversed string
  *
