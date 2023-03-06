@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_diagsums - print the sum of the two diags of n^2 matrix
  *
@@ -13,6 +14,11 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		s1 += a[i][i];
-		s2 += a[i][size - i - 1
+		s2 += a[i][size - i - 1]
 	}
+
+	_putchar(s1);
+	_putchar(',');
+	_putchar(' ');
+	_putchar(s2);
 }
