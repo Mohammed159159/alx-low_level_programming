@@ -7,7 +7,7 @@
  *
  * Return: Number of chars accepted
  */
-unsigned int *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, yes = 0;
 
