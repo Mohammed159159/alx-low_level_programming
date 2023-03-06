@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 		s2 += a[(i + 1) * size - i - 1]
 	}
 
-	printf("%d, %d", s1, s2);
+	printf("%u, %u", s1, s2);
 }
