@@ -12,6 +12,10 @@ void print_diagsums(int *a, int size)
 	int i;
 	unsigned int s1 = a[0], s2 = a[size - 1];
 
+	if (size == 0)
+		return;
+	if (size == 1)
+		printf("%d, %d", a[0], a[0]), return;
 	for (i = 1; i < size; i++)
 	{
 		s1 += a[i * size + i];
