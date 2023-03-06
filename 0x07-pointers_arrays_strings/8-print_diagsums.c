@@ -9,16 +9,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	unsigned int s1 = 0, s2 = 0;
+	int i;
+	unsigned int s1 = a[0], s2 = a[size - 1];
 
-	for (i = 0; i < size; i++)
+	for (i = 1; i < size; i++)
 	{
-		s1 += a[i][i];
-		s2 += a[i][size - i - 1]
+		s1 += a[i * size + i];
+		s2 += a[(i + 1) * size - i - 1]
 	}
 
-	_putchar(s1);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(s2);
+	printf("%d, %d", s1, s2);
 }
