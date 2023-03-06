@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 			isFound = 1;
 			for (j = 1; *(needle + j) != '\0'; j++)
 			{
-				if (*(s + j) != *(needle + j))
+				if (*(haystack + i + j) != *(needle + j))
 				{
 					isFound = 0;
 					break;
@@ -27,7 +27,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 
 			if (isFound)
-				return (s + i);
+				return (haystack + i);
 		}
 	}
 
