@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strchr - return pointer to 1st occur. of char c or NULL
  *
