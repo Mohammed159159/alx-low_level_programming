@@ -2,11 +2,11 @@
  * _strchr - return pointer to 1st occur. of char c or NULL
  *
  * @s: Pointer to string
- * @c: Charachter to be searched for
+ * @c: Character to be searched for
  *
  * Return: Pointer to first occur. of char or NULL
  */
-char *_srchr(char *s, charc)
+char *_strchr(char *s, char c)
 {
 	unsigned int i;
 
