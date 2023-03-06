@@ -12,6 +12,8 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int i, j;
 	int isFound = 0;
 
+	if (!*needle)
+		return (haystack);
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
 		if (*(haystack + i) == *needle)
