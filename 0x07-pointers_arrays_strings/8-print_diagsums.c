@@ -14,8 +14,6 @@ void print_diagsums(int *a, int size)
 
 	if (size == 0)
 		return;
-	if (size == 1)
-		printf("%d, %d", a[0], a[0]), return;
 	for (i = 1; i < size; i++)
 	{
 		s1 += a[i * size + i];
