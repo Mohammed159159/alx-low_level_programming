@@ -1,4 +1,3 @@
-#include<unistd.h>
 #include<stdio.h>
 /*
  * main - Entry point
@@ -7,9 +6,7 @@
  */
 int main(void)
 {
-	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	write(quote, strlen(quote));
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 
 	return (1);
 }
