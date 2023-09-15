@@ -19,7 +19,7 @@ int main(void)
 	}
 
 	if (num > 1)
-		largest_priem_factor = num;
+		largest_prime_factor = num;
 
 	printf("%ld\n", largest_prime_factor);
 
