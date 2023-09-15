@@ -19,7 +19,7 @@ void print_number(int n)
 	for (; i > 0; i /= 10)
 	{
 		last_digit = n / i % 10;
-		_putchar(last_digit + 48);
+		_putchar(last_digit + 48 + '0');
 	}
 }
 
