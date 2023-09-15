@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-/*
+/**
  * main - answer to Fizz-Buzz test
- * 
+ *
  * Return: nothing
  */
 int  main(void)
