@@ -16,7 +16,7 @@ void print_number(int n)
 	}
 	for (i = 1; i < n / 10; i *= 10)
 		;
-	for (; i > 0; i /=  10)
+	for (; i > 0; i /= 10)
 	{
 		last_digit = n / i % 10;
 		_putchar(last_digit + 48);
