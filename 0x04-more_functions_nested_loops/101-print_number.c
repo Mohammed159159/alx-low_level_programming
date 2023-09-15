@@ -16,7 +16,7 @@ void print_number(int n)
 	}
 
 	if (num / 10 > 0)
-		print_number(num / 10)
+		print_number(num / 10);
 
 	last_digit = num % 10;
 	_putchar((unsigned int)last_digit + '0');
