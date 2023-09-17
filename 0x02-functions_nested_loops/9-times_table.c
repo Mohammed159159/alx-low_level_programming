@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * time_table - print the 0 times table, starting with 0
+ * times_table - print the 0 times table, starting with 0
  *
  * Return: Nothing
  */
