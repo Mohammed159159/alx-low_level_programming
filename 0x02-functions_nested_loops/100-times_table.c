@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * print_times_table - print the n times table, starting
@@ -27,5 +27,5 @@ void print_times_table(int n)
 					printf(",   ");
 			}
 			printf("\n");
-		}
+		};
 }
