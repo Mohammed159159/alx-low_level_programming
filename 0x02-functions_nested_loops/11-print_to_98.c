@@ -12,7 +12,7 @@ void print_to_98(int n)
 
 	if (n > 98)
 		step = -1;
-		
+
 	for (i = n; i != 98; i += step)
 	{
 		printf("%d", i);
