@@ -22,7 +22,7 @@ void randomPasswordGeneration(int N)
 
 	char symbols[] = "!@#$^&*?";
 
-	char password[10];
+	char password[8];
 
 	randomizer = rand() % 4;
 
