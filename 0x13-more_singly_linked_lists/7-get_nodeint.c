@@ -5,6 +5,7 @@
  * the index of nodes starts at 0
  * @head: head of the linked list
  * @index: index of the node
+ * Return: nth node | NULL if no node is found
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -17,6 +18,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		head = head->next;
 	}
+
+	if (!head)
+		return (NULL);
 
 	return (head);
 }
