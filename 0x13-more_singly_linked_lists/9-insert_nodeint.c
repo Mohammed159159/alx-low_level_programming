@@ -6,7 +6,7 @@
  * @idx: index where the new node should be added
  * @n: node data
  * Return: address of the new node | NULL on failure
- * failure occurs when no new it is not possible to add the new node
+ * failure occurs when it is not possible to add the new node
  * at position idx
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -31,17 +31,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	h = *head;
 
-	for (i = 0; h && i < idx; i++)
-		h = h->next;
-
-	if (!h)
+	while (h)
 	{
-		free(new_node);
-		return (NULL);
+		if (i == idx - 1)
+		{
+			new_node->next = h->next;
+			h->next = new_node;
+			return (new_node);
+		}
+		i++;
+		h = h->next;
 	}
 
-	new_node->next = h->next;
-	h->next = new_node;
+	free(new_node);
+	return (NULL);
 
-	return (new_node);
 }
